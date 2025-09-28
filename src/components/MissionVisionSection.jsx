@@ -10,7 +10,11 @@ import {
 
 const MissionVisionSection = () => {
   return (
+<<<<<<< HEAD
     <Box id="mission" sx={{ py: { xs: 6, md: 10 }, bgcolor: "white" }}>
+=======
+    <Box id="mission" sx={{ py: 11, bgcolor: 'white' }}>
+>>>>>>> 08d88f9eec83c3b700825b304b1d4c6b3ae1092f
       <Container maxWidth="lg">
         {/* Header */}
         <Box sx={{ textAlign: "center" ,mb: { xs: 4, md: 6 } }} >

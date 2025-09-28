@@ -1,21 +1,13 @@
-import { Box } from '@mui/material'
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import AboutSection from './components/AboutSection'
-import MissionVisionSection from './components/MissionVisionSection'
-import WhyJoinSection from './components/WhyJoinSection'
-import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import LandingPage from './pages/LandingPage'
+import RegisterPage from './pages/RegisterPage'
 
 function App() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <MissionVisionSection />
-      <WhyJoinSection />
-      <Footer />
-    </Box>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/register" element={<RegisterPage />} />
+    </Routes>
   )
 }
 

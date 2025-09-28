@@ -6,54 +6,86 @@ import {
   Card,
   CardContent,
   Chip,
-} from '@mui/material'
+} from "@mui/material";
 
 const WhyJoinSection = () => {
   const reasons = [
     {
-      title: 'Innovation Hub',
-      description: 'Access to cutting-edge technology and research facilities that push the boundaries of what\'s possible.',
+      description:
+        "Stay Ahead with the Latest Aesthetic Innovations, Trends,and Technologies.",
     },
     {
-      title: 'Expert Network',
-      description: 'Connect with industry leaders, researchers, and innovators who share your passion for technology.',
+      description:
+        "Build powerful connections with experts and peers to grow your career and business",
     },
     {
-      title: 'Career Growth',
-      description: 'Accelerate your professional development with mentorship, training, and real-world project experience.',
+      description:
+        "Enhance your skills through workshops and insights fromindustry leaders",
     },
     {
-      title: 'Global Impact',
-      description: 'Contribute to projects that make a meaningful difference in communities around the world.',
+      description:
+        "Contribute to projects that make a meaningful difference in communities around the world.",
     },
     {
-      title: 'Collaborative Environment',
-      description: 'Work in a supportive, diverse environment that values creativity and collaborative problem-solving.',
+      description: "Earn CME credits to advance your qualifications.",
     },
     {
-      title: 'Future-Ready Skills',
-      description: 'Develop expertise in emerging technologies that will define the next decade of innovation.',
+      description:
+        "Experience exclusive dinners, networking sessions, and social events throughout the conference.",
     },
-  ]
+  ];
 
   return (
-    <Box id="join" sx={{ py: 10, bgcolor: 'background.default' }}>
+    <Box id="join" sx={{ py: 10, bgcolor: "background.default" }}>
       <Container maxWidth="lg">
-        <Box sx={{ textAlign: 'center', mb: 8 }}>
-          <Chip label="Why Join Us" color="primary" sx={{ mb: 2 }} />
-          <Typography variant="h2" gutterBottom color="primary">
-            Be Part of Something Extraordinary
+<Box sx={{ textAlign: "center" ,mb: { xs: 4, md: 6 } }} >
+                        <Typography
+            variant="h2"
+            gutterBottom
+            color="primary"
+            sx={{
+              fontSize: { xs: "1.6rem", sm: "2rem", md: "2.5rem" },
+              fontWeight: 700,
+            }}
+          >
+            Why Join Us
           </Typography>
-        </Box>
+          <Box
+              sx={{
+                height: { xs: 250, sm: 300, md: 400 },
+                borderRadius: 3,
+                background: "linear-gradient(45deg, #1a3741, #366771)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "white",
+                p: { xs: 2, md: 0 },
+              }}
+            >
+              <Typography
+                variant="h4"
+                sx={{
+                  textAlign: "center",
+                  fontSize: { xs: "1.4rem", sm: "1.6rem", md: "2rem" },
+                }}
+              >
+                Why Join us image
+              </Typography>
+            </Box>
+            </Box>
         <Grid container spacing={4}>
           {reasons.map((item, index) => (
-            <Grid item xs={12} md={4} key={index}>
-              <Card sx={{ height: '100%', p: 3, textAlign: 'center' }}>
+            <Grid item size={{ xs: 12 }} key={index}>
+              <Card sx={{ height: "100%", p: 3, textAlign: "left" }}>
                 <CardContent>
-                  <Typography variant="h5" gutterBottom color="primary" sx={{ mb: 2 }}>
-                    {item.title}
-                  </Typography>
-                  <Typography variant="body1" sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      color: "text.secondary",
+                      lineHeight: { xs: 1.4, sm: 1.5, md: 1.6 },
+                      fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" }, // responsive scaling
+                    }}
+                  >
                     {item.description}
                   </Typography>
                 </CardContent>
@@ -63,7 +95,7 @@ const WhyJoinSection = () => {
         </Grid>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default WhyJoinSection 
+export default WhyJoinSection;

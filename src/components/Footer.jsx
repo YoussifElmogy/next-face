@@ -39,9 +39,7 @@ const Footer = () => {
                   filter: 'brightness(0) invert(1)' 
                 }} 
               />
-              <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                Next Face
-              </Typography>
+
             </Box>
             <Typography variant="body2" sx={{ opacity: 0.8, lineHeight: 1.6 }}>
               Shaping the future through innovation, collaboration, and cutting-edge technology.
@@ -84,7 +82,7 @@ const Footer = () => {
         </Grid>
         <Divider sx={{ my: 4, borderColor: 'rgba(255, 255, 255, 0.2)' }} />
         <Typography variant="body2" sx={{ textAlign: 'center', opacity: 0.8 }}>
-          © 2024 Next Face. All rights reserved.
+          © 2025 Next Face. All rights reserved.
         </Typography>
       </Container>
     </Box>

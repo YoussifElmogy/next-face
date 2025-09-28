@@ -76,14 +76,14 @@ const WhyJoinSection = () => {
         <Grid container spacing={4}>
           {reasons.map((item, index) => (
             <Grid item size={{ xs: 12 }} key={index}>
-              <Card sx={{ height: "100%", p: 3, textAlign: "left" }}>
-                <CardContent>
+              <Card sx={{ height: "100%", p: 3, textAlign: "left", padding:4 }}>
+                <CardContent sx={{padding:0, paddingBottom:'0px !important'}}>
                   <Typography
                     variant="h5"
                     sx={{
                       color: "text.secondary",
                       lineHeight: { xs: 1.4, sm: 1.5, md: 1.6 },
-                      fontSize: { xs: "1rem", sm: "1.25rem", md: "1.5rem" }, // responsive scaling
+                      fontSize: { xs: "1rem", sm: "1.15rem"}, // responsive scaling
                     }}
                   >
                     {item.description}

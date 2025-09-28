@@ -50,6 +50,7 @@ const AboutSection = () => {
               sx={{
                 mb: 3,
                 fontSize: { xs: "0.85rem", sm: "1rem", md: "1.1rem" },
+                fontWeight: 400,
                 lineHeight: { xs: 1.5, sm: 1.6, md: 1.7 },
                 color: "#366771",
                 textAlign: { xs: "center", md: "left" },

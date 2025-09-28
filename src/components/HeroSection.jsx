@@ -60,7 +60,6 @@ const HeroSection = () => {
         alignItems: 'center',
         color: 'white',
         pt: 16,
-        pb:16
       }}
     >
       <Container maxWidth="lg">
@@ -76,9 +75,7 @@ const HeroSection = () => {
                 textAlign: 'center',
                 fontSize: {
                   xs: '1.5rem',
-                  sm: '2rem',
-                  md: '2.5rem',
-                  lg: '3rem',
+                  sm: '2rem',                 
                 },
               }}
             >
@@ -91,14 +88,14 @@ const HeroSection = () => {
                 <CalendarIcon sx={{ mr: 2, color: '#82b6b8' }} />
                                 <Typography
                   variant="h6"
-                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem', md: '1.25rem' } }}
+                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem'} }}
                 >December 3, 2025</Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
                 <LocationIcon sx={{ mr: 2, color: '#82b6b8' }} />
                                 <Typography
                   variant="h6"
-                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem', md: '1.25rem' } }}
+                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem'} }}
                 >Innovation Center, Tech District</Typography>
               </Box>
             </Box>
@@ -111,9 +108,9 @@ const HeroSection = () => {
                 sx={{
                   bgcolor: '#82b6b8',
                   color: '#1a3741',
-                  px: { xs: 2, sm: 3, md: 4 },
-                  py: { xs: 1, sm: 1.25, md: 1.5 },
-                  fontSize: { xs: '0.9rem', sm: '1rem', md: '1.1rem' },
+                  px: { xs: 2, sm: 3 },
+                  py: { xs: 1, sm: 1.25 },
+                  fontSize: { xs: '0.9rem', sm: '1rem' },
                   '&:hover': { bgcolor: '#b3d4d6' },
                 }}
                 onClick={() => navigate('/register')}
@@ -131,9 +128,9 @@ const HeroSection = () => {
                 sx={{
                   borderColor: '#82b6b8',
                   color: '#82b6b8',
-                  px: { xs: 2, sm: 3, md: 4 },
-                  py: { xs: 1, sm: 1.25, md: 1.5 },
-                  fontSize: { xs: '0.9rem', sm: '1rem', md: '1.1rem' },
+                  px: { xs: 2, sm: 3 },
+                  py: { xs: 1, sm: 1.25 },
+                  fontSize: { xs: '0.9rem', sm: '1rem'},
                   '&:hover': { borderColor: '#b3d4d6', color: '#b3d4d6' },
                 }}
               >
@@ -146,7 +143,7 @@ const HeroSection = () => {
           <Grid item xs={12} md={6}>
             <Paper
               sx={{
-                p: { xs: 2, sm: 3, md: 4 },
+                p: { xs: 2, sm: 3 },
                 textAlign: 'center',
                 background: 'rgba(255, 255, 255, 0.1)',
                 backdropFilter: 'blur(10px)',
@@ -160,7 +157,7 @@ const HeroSection = () => {
                 sx={{
                   color: '#82b6b8',
                   mb: { xs: 2, md: 3 },
-                  fontSize: { xs: '1.25rem', sm: '1.5rem', md: '2rem' },
+                  fontSize: { xs: '1.25rem', sm: '1.34rem' },
                 }}
               >
                 Event Countdown
@@ -185,7 +182,7 @@ const HeroSection = () => {
                         sx={{
                           fontWeight: 700,
                           color: 'white',
-                          fontSize: { xs: '1.25rem', sm: '2rem', md: '2.5rem' },
+                          fontSize: { xs: '1.25rem', sm: '1.5rem'},
                         }}
                       >
                         {item.value.toString().padStart(2, '0')}
@@ -195,7 +192,7 @@ const HeroSection = () => {
                         sx={{
                           color: '#82b6b8',
                           textTransform: 'uppercase',
-                          fontSize: { xs: '0.6rem', sm: '0.75rem', md: '0.9rem' },
+                          fontSize: { xs: '0.6rem', sm: '0.55rem' },
                         }}
                       >
                         {item.label}

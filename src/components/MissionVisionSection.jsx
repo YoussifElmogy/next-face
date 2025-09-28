@@ -10,16 +10,12 @@ import {
 
 const MissionVisionSection = () => {
   return (
-<<<<<<< HEAD
-    <Box id="mission" sx={{ py: { xs: 6, md: 10 }, bgcolor: "white" }}>
-=======
     <Box id="mission" sx={{ py: 11, bgcolor: 'white' }}>
->>>>>>> 08d88f9eec83c3b700825b304b1d4c6b3ae1092f
       <Container maxWidth="lg">
         {/* Header */}
         <Box sx={{ textAlign: "center" ,mb: { xs: 4, md: 6 } }} >
                         <Typography
-            variant="h2"
+            variant="h2"s
             gutterBottom
             color="primary"
             sx={{
@@ -72,10 +68,10 @@ const MissionVisionSection = () => {
                 <Typography
                   variant="body1"
                   sx={{
-                    fontSize: { xs: "0.85rem", sm: "1rem", md: "1.1rem" },
+                    fontSize: { xs: "0.85rem", sm: "1rem" },
                     lineHeight: { xs: 1.5, sm: 1.6, md: 1.7 },
                     color: "#366771",
-                    textAlign: { xs: "center", md: "left" },
+                    textAlign: "left",
                   }}
                 >
                   At NEXT FACE, our mission is to redefine the conversation
@@ -107,10 +103,10 @@ const MissionVisionSection = () => {
                 <Typography
                   variant="body1"
                   sx={{
-                    fontSize: { xs: "0.85rem", sm: "1rem", md: "1.1rem" },
+                    fontSize: { xs: "0.85rem", sm: "1rem" },
                     lineHeight: { xs: 1.5, sm: 1.6, md: 1.7 },
                     color: "#366771",
-                    textAlign: { xs: "center", md: "left" },
+                    textAlign: "left",
                   }}
                 >
                   Our vision is to position NEXT FACE as the world’s most

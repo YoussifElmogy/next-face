@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import {
   AppBar,
   Toolbar,
@@ -22,9 +23,19 @@ const navItems = [
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false)
+  const navigate = useNavigate()
 
   const scrollToSection = (sectionId) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const elementPosition = element.offsetTop
+      const offsetPosition = elementPosition - 30 // 30px offset from top
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
     setDrawerOpen(false)
   }
 
@@ -81,7 +92,7 @@ const Navbar = () => {
                 color: 'primary.main',
                 '&:hover': { bgcolor: 'secondary.light' },
               }}
-              onClick={() => scrollToSection('register')}
+              onClick={() => navigate('/register')}
             >
               Register
             </Button>

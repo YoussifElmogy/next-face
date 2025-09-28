@@ -10,7 +10,7 @@ import {
 
 const MissionVisionSection = () => {
   return (
-    <Box id="mission" sx={{ py: 10, bgcolor: 'white' }}>
+    <Box id="mission" sx={{ py: 11, bgcolor: 'white' }}>
       <Container maxWidth="lg">
         <Box sx={{ textAlign: 'center', mb: 8 }}>
           <Chip label="Mission & Vision" color="primary" sx={{ mb: 2 }} />

@@ -50,13 +50,7 @@ const HeroSection = () => {
     <Box
       sx={{
         minHeight: '100vh',
-        background: `
-          url(${heroImg})
-        `,
-        backgroundSize: 'cover',
-        position:"relative",
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
+	        position:"relative",
         display: 'flex',
         alignItems: 'center',
         color: 'white',
@@ -72,13 +66,30 @@ const HeroSection = () => {
       zIndex: 1,
     },
 
-    '& > *': {
+	    '& > *:not([data-bg])': {
       position: 'relative',
       zIndex: 2,
     },
       }}
       
     >
+      <Box
+        component="img"
+        src={heroImg}
+        alt=""
+        aria-hidden
+        data-bg
+        sx={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          objectPosition: 'center',
+          zIndex: 0,
+        }}
+      />
       <Container maxWidth="lg">
         <Grid container spacing={4} alignItems="center" justifyContent="center" >
           <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

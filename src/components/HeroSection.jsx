@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
+import heroImg from '../assets/hero.jpg';
 import {
   Typography,
   Container,
@@ -50,17 +51,33 @@ const HeroSection = () => {
       sx={{
         minHeight: '100vh',
         background: `
-          linear-gradient(135deg, rgba(26, 55, 65, 0.8) 0%, rgba(54, 103, 113, 0.8) 50%, rgba(130, 182, 184, 0.8) 100%),
-          url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80')
+          url(${heroImg})
         `,
         backgroundSize: 'cover',
+        position:"relative",
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
         display: 'flex',
         alignItems: 'center',
         color: 'white',
         pt: 16,
+            '&::before': {
+      content: '""',
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      background: 'rgba(0,0,0,0.5)', // Dark overlay
+      zIndex: 1,
+    },
+
+    '& > *': {
+      position: 'relative',
+      zIndex: 2,
+    },
       }}
+      
     >
       <Container maxWidth="lg">
         <Grid container spacing={4} alignItems="center" justifyContent="center" >
@@ -71,6 +88,7 @@ const HeroSection = () => {
               sx={{
                 mb: { xs: 3, md: 4 },
                 opacity: 0.9,
+                color:"#dcd5cd",
                 lineHeight: 1.6,
                 textAlign: 'center',
                 fontSize: {
@@ -85,17 +103,17 @@ const HeroSection = () => {
             {/* Event Details */}
             <Box display="flex" gap={4} sx={{ mb: 1 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                <CalendarIcon sx={{ mr: 2, color: '#82b6b8' }} />
+                <CalendarIcon sx={{ mr: 2, color: '#dcd5cd' }} />
                                 <Typography
                   variant="h6"
-                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem'} }}
+                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem'} ,color:'#dcd5cd' }}
                 >December 3, 2025</Typography>
               </Box>
               <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
-                <LocationIcon sx={{ mr: 2, color: '#82b6b8' }} />
+                <LocationIcon sx={{ mr: 2, color: '#dcd5cd' }} />
                                 <Typography
                   variant="h6"
-                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem'} }}
+                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem'},color:"#dcd5cd" }}
                 >Innovation Center, Tech District</Typography>
               </Box>
             </Box>
@@ -106,12 +124,11 @@ const HeroSection = () => {
                 variant="contained"
                 size="large"
                 sx={{
-                  bgcolor: '#82b6b8',
+                  bgcolor: '#dcd5cd',
                   color: '#1a3741',
                   px: { xs: 2, sm: 3 },
                   py: { xs: 1, sm: 1.25 },
                   fontSize: { xs: '0.9rem', sm: '1rem' },
-                  '&:hover': { bgcolor: '#b3d4d6' },
                 }}
                 onClick={() => navigate('/register')}
 
@@ -126,13 +143,13 @@ const HeroSection = () => {
                   target="_blank"
   rel="noopener noreferrer"
                 sx={{
+                  bgcolor:'#dcd5cd',
                   borderColor: '#82b6b8',
-                  color: '#82b6b8',
+                  color: '#1a3741',
                   px: { xs: 2, sm: 3 },
                   py: { xs: 1, sm: 1.25 },
                   fontSize: { xs: '0.9rem', sm: '1rem'},
-                  '&:hover': { borderColor: '#b3d4d6', color: '#b3d4d6' },
-                }}
+                   }}
               >
                 Add to Calendar
               </Button>
@@ -155,7 +172,7 @@ const HeroSection = () => {
                 variant="h4"
                 gutterBottom
                 sx={{
-                  color: '#82b6b8',
+                  color: '#dcd5cd',
                   mb: { xs: 2, md: 3 },
                   fontSize: { xs: '1.25rem', sm: '1.34rem' },
                 }}
@@ -181,7 +198,7 @@ const HeroSection = () => {
                         variant="h3"
                         sx={{
                           fontWeight: 700,
-                          color: 'white',
+                          color: '#dcd5cd',
                           fontSize: { xs: '1.25rem', sm: '1.5rem'},
                         }}
                       >
@@ -190,7 +207,7 @@ const HeroSection = () => {
                       <Typography
                         variant="body2"
                         sx={{
-                          color: '#82b6b8',
+                          color: '#dcd5cd',
                           textTransform: 'uppercase',
                           fontSize: { xs: '0.6rem', sm: '0.55rem' },
                         }}

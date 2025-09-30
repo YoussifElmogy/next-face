@@ -7,15 +7,17 @@ import {
   CardContent,
   Chip,
 } from "@mui/material";
+import missionimg from "../assets/Mission & Vision.jpg";
 
 const MissionVisionSection = () => {
   return (
-    <Box id="mission" sx={{ py: 11, bgcolor: 'white' }}>
+    <Box id="mission" sx={{ py: 11, bgcolor: "white" }}>
       <Container maxWidth="lg">
         {/* Header */}
-        <Box sx={{ textAlign: "center" ,mb: { xs: 4, md: 6 } }} >
-                        <Typography
-            variant="h2"s
+        <Box sx={{ textAlign: "center", mb: { xs: 4, md: 6 } }}>
+          <Typography
+            variant="h2"
+            s
             gutterBottom
             color="primary"
             sx={{
@@ -26,28 +28,68 @@ const MissionVisionSection = () => {
             Mission & Vision
           </Typography>
           <Box
+            sx={{
+              position: "relative",
+              borderRadius: 4,
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              boxShadow: "0 12px 30px rgba(0,0,0,0.25)", // stronger shadow
+              border: "3px solid transparent",
+              background: "linear-gradient(135deg, #ffffff, #dfe9f3)", // soft gradient border
+              p: "3px", // spacing for gradient border
+            }}
+          >
+            <Box
+              component="img"
+              src={missionimg}
+              alt="Why Join Us"
               sx={{
-                height: { xs: 250, sm: 300, md: 400 },
+                width: "100%",
+                height: "600px",
+                objectFit: "cover",
                 borderRadius: 3,
-                background: "linear-gradient(45deg, #1a3741, #366771)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "white",
-                p: { xs: 2, md: 0 },
+                transition: "transform 0.5s ease, filter 0.3s ease",
+                "&:hover": {
+                  transform: "scale(1.03)",
+                  filter: "brightness(1.1)", // brightens image slightly
+                },
               }}
-            >
-              <Typography
-                variant="h4"
-                sx={{
-                  textAlign: "center",
-                  fontSize: { xs: "1.4rem", sm: "1.6rem", md: "2rem" },
-                }}
-              >
-                Mission and vision image
-              </Typography>
-            </Box>
-            </Box>
+            />
+
+            {/* Subtle overlay on hover */}
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                background:
+                  "linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0))",
+                opacity: 0,
+                transition: "opacity 0.3s ease",
+                "&:hover": {
+                  opacity: 1,
+                },
+              }}
+            />
+
+            {/* Optional caption text */}
+            <Box
+              sx={{
+                position: "absolute",
+                bottom: 16,
+                left: 16,
+                color: "white",
+                fontWeight: 500,
+                fontSize: "1rem",
+                textShadow: "0px 2px 6px rgba(0,0,0,0.6)",
+              }}
+            ></Box>
+          </Box>
+        </Box>
 
         {/* Mission & Vision Cards */}
         <Grid container spacing={{ xs: 3, md: 4 }}>

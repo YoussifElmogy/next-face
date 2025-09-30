@@ -75,6 +75,7 @@ const Navbar = () => {
             {navItems.map((item) => (
               <Button
                 key={item.label}
+                sx={{ fontSize: '1.1rem', fontWeight: 500 }}
                 color="inherit"
                 onClick={() => scrollToSection(item.id)}
               >
@@ -88,6 +89,7 @@ const Navbar = () => {
             <Button
               variant="contained"
               sx={{
+                 fontSize: '1.1rem', fontWeight: 500 ,
                 bgcolor: 'secondary.main',
                 color: 'primary.main',
                 '&:hover': { bgcolor: 'secondary.light' },

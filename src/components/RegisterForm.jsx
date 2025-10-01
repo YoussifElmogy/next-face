@@ -553,17 +553,7 @@ const RegisterForm = () => {
               alt="Next Face Logo"
               style={{ height: 60, marginBottom: 16 }}
             />
-            <Typography
-              variant="h4"
-              gutterBottom
-              sx={{
-                color: "#1a3741",
-                fontWeight: 600,
-                mb: 1,
-              }}
-            >
-              Join Next Face
-            </Typography>
+         
             <Typography
               variant="body1"
               sx={{
@@ -571,7 +561,7 @@ const RegisterForm = () => {
                 mb: 3,
               }}
             >
-              Register for the Innovation Summit 2025
+              Register now and take part in reshaping the aesthetic experience in the heart of Egypt
             </Typography>
           </Box>
 

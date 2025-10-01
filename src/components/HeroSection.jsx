@@ -108,23 +108,23 @@ const HeroSection = () => {
                 },
               }}
             >
-              Join us for an extraordinary event that will shape the future of innovation and technology.
+              THE AESTHETIC EXPERIENCE OF MODERN EGYPT REIMAGINED IN THE HEART OF EGYPT
             </Typography>
             
             {/* Event Details */}
-            <Box display="flex" gap={4} sx={{ mb: 1 }}>
-              <Box sx={{ display: 'flex', alignItems: 'center', mb: 2 }}>
-                <CalendarIcon sx={{ mr: 2, color: '#dcd5cd' }} />
+            <Box  sx={{display:'flex', mb: 1, gap: { xs: 2, md: 4 } }}>
+              <Box sx={{ display: 'flex', alignItems: 'center', mb: { xs: 1, md: 2 } }}>
+                <CalendarIcon sx={{ mr: 1, color: '#dcd5cd' }} />
                                 <Typography
                   variant="h6"
-                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem'} ,color:'#dcd5cd' }}
+                  sx={{ fontSize: { xs: '0.9rem', sm: '1.1rem'} ,color:'#dcd5cd' }}
                 >December 3, 2025</Typography>
               </Box>
-              <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
-                <LocationIcon sx={{ mr: 2, color: '#dcd5cd' }} />
+              <Box sx={{ display: 'flex', alignItems: 'center', mb: { xs: 1, md: 3 } }}>
+                <LocationIcon sx={{ mr: 1, color: '#dcd5cd' }} />
                                 <Typography
                   variant="h6"
-                  sx={{ fontSize: { xs: '1rem', sm: '1.1rem'},color:"#dcd5cd" }}
+                  sx={{ fontSize: { xs: '0.9rem', sm: '1.1rem'},color:"#dcd5cd" }}
                 >Innovation Center, Tech District</Typography>
               </Box>
             </Box>

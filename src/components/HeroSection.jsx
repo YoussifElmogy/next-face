@@ -125,7 +125,7 @@ const HeroSection = () => {
                                 <Typography
                   variant="h6"
                   sx={{ fontSize: { xs: '0.9rem', sm: '1.1rem'},color:"#dcd5cd" }}
-                >Innovation Center, Tech District</Typography>
+                >Soma Bay, Hurghada, Egypt</Typography>
               </Box>
             </Box>
 

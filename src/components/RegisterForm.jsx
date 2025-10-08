@@ -533,6 +533,7 @@ const RegisterForm = () => {
         alignItems: "center",
         justifyContent: "center",
         py: 4,
+
       }}
     >
       <Container maxWidth="sm">
@@ -544,6 +545,7 @@ const RegisterForm = () => {
             backgroundColor: "rgba(255,255,255,0.5)",
             backdropFilter: "blur(10px)",
             boxShadow: "0 20px 40px rgba(26, 55, 65, 0.1)",
+   
           }}
         >
           {/* Logo and Header */}
@@ -555,7 +557,7 @@ const RegisterForm = () => {
             />
          
             <Typography
-              variant="body1"
+              variant="h6"
               sx={{
                 color: "#1a3741",
                 mb: 3,

@@ -44,9 +44,17 @@ const Footer = () => {
               <EmailIcon sx={{ mr: 2, opacity: 0.8 }} />
               <Typography variant="body2">info@nextfaceofficial.com</Typography>
             </Box>
+
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <PhoneIcon sx={{ mr: 2, opacity: 0.8 }} />
-              <Typography variant="body2">+1 (555) 123-4567</Typography>
+              <Typography
+                variant="body2"
+                component="a"
+                href="tel:+201153443350"
+                sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}
+              >
+                +20 1153443350
+              </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>

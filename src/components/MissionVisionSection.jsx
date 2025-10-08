@@ -116,13 +116,9 @@ const MissionVisionSection = () => {
                     textAlign: "left",
                   }}
                 >
-                  At NEXT FACE, our mission is to redefine the conversation
-                  around beauty and aesthetics by blending wellness, culture,
-                  design, and investment into one groundbreaking platform. We
-                  strive to create an environment where brands, experts,
-                  creatives, and investors can connect, share ideas, and spark
-                  innovation through immersive experiences that inspire growth,
-                  collaboration, and transformation.
+             To elevate the standards of aesthetic medicine through education, innovation, and collaboration.
+NextFace unites global experts and passionate professionals to exchange knowledge, promote safety, and inspire the future of aesthetic excellence — all in a setting where science meets serenity by the Red Sea.
+
                 </Typography>
               </CardContent>
             </Card>
@@ -151,13 +147,9 @@ const MissionVisionSection = () => {
                     textAlign: "left",
                   }}
                 >
-                  Our vision is to position NEXT FACE as the world’s most
-                  influential aesthetic symposium — a place where trends are
-                  born, partnerships are forged, and the future of beauty and
-                  wellness is shaped. We aim to set new global standards by
-                  bringing together the brightest minds and boldest voices to
-                  push the boundaries of creativity, science, and lifestyle in
-                  the aesthetic field.
+                  To make NextFace a global meeting point for aesthetic professionals — connecting experts and societies from around the world to share knowledge and promote safe, effective, and ethical practice.
+We aim to lead a new era in aesthetic medicine where innovation, education, and collaboration shape the future of beauty.
+
                 </Typography>
               </CardContent>
             </Card>

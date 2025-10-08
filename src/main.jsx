@@ -35,37 +35,188 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily:
-      '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+    fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
+    fontWeight: 700,
     h1: {
+      fontFamily:
+        '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 700,
       fontSize: "3.5rem",
       lineHeight: 1.2,
     },
     h2: {
+      fontFamily:
+        '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: "2.5rem",
       lineHeight: 1.3,
     },
     h3: {
+      fontFamily:
+        '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 600,
       fontSize: "2rem",
       lineHeight: 1.4,
     },
     h4: {
+      fontFamily:
+        '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
       fontWeight: 500,
       fontSize: "1.5rem",
       lineHeight: 1.4,
     },
+    h5: {
+      fontFamily:
+        '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+      fontWeight: 500,
+      fontSize: "1.25rem",
+      lineHeight: 1.4,
+    },
+    h6: {
+      fontFamily:
+        '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+      fontWeight: 500,
+      fontSize: "1rem",
+      lineHeight: 1.4,
+    },
   },
   components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiToolbar: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
           borderRadius: 8,
           textTransform: "none",
           fontWeight: 500,
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
           padding: "10px 24px",
+        },
+      },
+    },
+    // Inputs use Hanno globally
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+        input: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+        input: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiFilledInput: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+        input: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiInput: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+        input: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiFormLabel: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiFormHelperText: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiSelect: {
+      styleOverrides: {
+        select: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+        },
+      },
+    },
+    MuiAutocomplete: {
+      styleOverrides: {
+        inputRoot: {
+          '& .MuiInputBase-input': {
+            fontFamily:
+              '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+          },
+        },
+        option: {
+          fontFamily:
+            '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
         },
       },
     },

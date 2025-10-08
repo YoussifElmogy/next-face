@@ -89,8 +89,7 @@ const AboutSection = () => {
               </Box>
             </Box>
 
-            <Typography
-              variant="body1"
+            <Box
               sx={{
                 mb: 3,
                 fontSize: { xs: "0.85rem", sm: "1rem", md: "1.1rem" },
@@ -100,18 +99,25 @@ const AboutSection = () => {
                 textAlign: { xs: "center", md: "left" },
               }}
             >
-              NEXT FACE is a groundbreaking symposium redefining the future of
-              beauty, wellness, culture, and design while unlocking new
-              investment opportunities in the aesthetic industry. Taking place
-              in December 2025 in Soma Bay, Hurghada, this prestigious event
-              will bring together world-renowned experts, global brands,
-              influencers, investors, and creatives from across the MENA region
-              and beyond. Through visionary panels, hands-on workshops,
-              immersive brand activations, and exclusive lifestyle experiences,
-              NEXT FACE goes beyond a symposium—it is a movement to establish
-              Egypt as the region’s premier hub for aesthetic innovation,
-              medical tourism, and cultural excellence on the global stage.
-            </Typography>
+              <Box mb={1}>
+              NextFace is a world-class event in aesthetic medicine, where science, innovation, and artistry come together by the sea.
+              </Box>
+              <Box mb={1}>
+              Bringing together global pioneers, scientific minds, and forward-thinking professionals, NextFace stands at the intersection of art, science, and innovation.
+              </Box>
+              <Box mb={1}>
+              Our mission is to redefine beauty through evidence-based practice, technological advancement, and a deep respect for inBoxiduality and safety. 
+              </Box>
+              <Box mb={1}>
+              Held in one of the most inspiring destinations, NextFace offers an immersive scientific and networking experience from world-class lectures and live injection demonstrations to hands-on masterclasses led by international experts.
+              </Box>
+              <Box mb={1}>
+              Every session is designed to spark collaboration, challenge conventional thinking, and set new benchmarks in clinical excellence and safety.
+              </Box>
+              <Box mb={1}>
+              Welcome to the future of aesthetics. Welcome to NextFace.
+              </Box>
+            </Box>
           </Grid>
         </Grid>
       </Container>

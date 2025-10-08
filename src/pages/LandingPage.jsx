@@ -6,6 +6,7 @@ import AboutSection from '../components/AboutSection'
 import MissionVisionSection from '../components/MissionVisionSection'
 import WhyJoinSection from '../components/WhyJoinSection'
 import Footer from '../components/Footer'
+import NewsletterSection from '../components/NewsletterSection'
 
 const LandingPage = () => {
   return (
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <AboutSection />
       <MissionVisionSection />
       <WhyJoinSection />
+      <NewsletterSection />
       <Footer />
     </Box>
   )

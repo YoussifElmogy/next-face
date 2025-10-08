@@ -140,7 +140,7 @@ Join global leaders, innovators, and professionals by the beautiful Red Sea in S
     </Box>
 
     {/* ✅ Cards Grid */}
-    <Grid container spacing={8} justifyContent="center">
+    <Grid container  spacing={{ xs: 4, md: 8 }} justifyContent="center">
       {reasons.map((item, idx) => (
         <Grid item key={idx} xs={12} sm={6} md={6}>
           <Card

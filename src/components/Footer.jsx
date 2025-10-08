@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import {
   Instagram as InstagramIcon,
+  LinkedIn as LinkedinIcon,
   Email as EmailIcon,
   Phone as PhoneIcon,
 } from "@mui/icons-material";
@@ -58,28 +59,59 @@ const Footer = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={4}>
-            <Typography variant="h6" gutterBottom sx={{ mb: 3 }}>
-              Follow Us
-            </Typography>
-            <Chip
-              icon={<InstagramIcon />}
-              label="Instagram"
-              component="a"
-              href="https://www.instagram.com/next.faceofficial/?igsh=MTE4dGdwaHA0bng4Zg%3D%3D#"
-              clickable
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{
-                color: "white",
-                borderRadius: "8px",
-                "& .MuiChip-icon": {
-                  color: "white", // make icon white
-                },
-                bgcolor: "rgba(255, 255, 255, 0.1)", // optional background
-                "&:hover": { bgcolor: "rgba(255, 255, 255, 0.2)" },
-              }}
-            />
-          </Grid>
+  <Typography variant="h6" gutterBottom sx={{ mb: 3 }}>
+    Follow Us
+  </Typography>
+
+  <Box sx={{ display: "flex", gap: 2 }}>
+    {/* Instagram */}
+    <IconButton
+      component="a"
+      href="https://www.instagram.com/next.faceofficial/?igsh=MTE4dGdwaHA0bng4Zg%3D%3D#"
+      target="_blank"
+      rel="noopener noreferrer"
+      sx={{
+        color: "white",
+        bgcolor: "rgba(255, 255, 255, 0.1)",
+        "&:hover": { bgcolor: "rgba(255, 255, 255, 0.2)" },
+      }}
+    >
+      <InstagramIcon />
+    </IconButton>
+
+    {/* LinkedIn */}
+    <IconButton
+      component="a"
+      href="https://www.linkedin.com/company/nextface/"
+      target="_blank"
+      rel="noopener noreferrer"
+      sx={{
+        color: "white",
+        bgcolor: "rgba(255, 255, 255, 0.1)",
+        "&:hover": { bgcolor: "rgba(255, 255, 255, 0.2)" },
+      }}
+    >
+      <LinkedinIcon />
+    </IconButton>
+
+    {/* TikTok */}
+    <IconButton
+  component="a"
+  href="https://www.tiktok.com/@nextfaceofficial"
+  target="_blank"
+  rel="noopener noreferrer"
+  sx={{
+    color: "white",
+    bgcolor: "rgba(255, 255, 255, 0.1)",
+    "&:hover": { bgcolor: "rgba(255, 255, 255, 0.2)" },
+  }}
+>
+  <i className="fa-brands fa-tiktok" style={{ fontSize: 22 }}></i>
+</IconButton>
+
+  </Box>
+</Grid>
+
         </Grid>
         <Divider sx={{ my: 4, borderColor: "rgba(255, 255, 255, 0.2)" }} />
         <Typography variant="body2" sx={{ textAlign: "center", opacity: 0.8 }}>

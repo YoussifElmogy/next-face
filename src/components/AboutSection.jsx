@@ -1,5 +1,5 @@
 import { Typography, Container, Box, Grid, Chip } from "@mui/material";
-import AboutImg from "../assets/About.jpg";
+import AboutImg from "../assets/about-us.jpg";
 
 const AboutSection = () => {
   return (

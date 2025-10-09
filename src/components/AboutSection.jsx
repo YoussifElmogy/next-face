@@ -103,7 +103,7 @@ const AboutSection = () => {
               NextFace is a world-class event in aesthetic medicine, where science, innovation, and artistry come together by the sea.
               </Box>
               <Box mb={1}>
-              Bringing together global pioneers, scientific minds, and forward-thinking professionals, NextFace stands at the intersection of art, science, and innovation.
+              Bringing together global pioneers of the modern aesthetics industry.
               </Box>
               <Box mb={1}>
               Our mission is to redefine beauty through evidence-based practice, technological advancement, and a deep respect for individuality and safety. 

@@ -43,6 +43,7 @@ const theme = createTheme({
       fontWeight: 700,
       fontSize: "3.5rem",
       lineHeight: 1.2,
+      textTransform:"lowercase"
     },
     h2: {
       fontFamily:
@@ -50,6 +51,8 @@ const theme = createTheme({
       fontWeight: 600,
       fontSize: "2.5rem",
       lineHeight: 1.3,
+      textTransform:"lowercase"
+
     },
     h3: {
       fontFamily:
@@ -57,6 +60,8 @@ const theme = createTheme({
       fontWeight: 600,
       fontSize: "2rem",
       lineHeight: 1.4,
+      textTransform:"lowercase"
+
     },
     h4: {
       fontFamily:
@@ -64,6 +69,8 @@ const theme = createTheme({
       fontWeight: 500,
       fontSize: "1.5rem",
       lineHeight: 1.4,
+      textTransform:"lowercase"
+
     },
     h5: {
       fontFamily:
@@ -71,6 +78,8 @@ const theme = createTheme({
       fontWeight: 500,
       fontSize: "1.25rem",
       lineHeight: 1.4,
+      textTransform:"lowercase"
+
     },
     h6: {
       fontFamily:
@@ -78,6 +87,8 @@ const theme = createTheme({
       fontWeight: 500,
       fontSize: "1rem",
       lineHeight: 1.4,
+      textTransform:"lowercase"
+
     },
   },
   components: {
@@ -86,6 +97,8 @@ const theme = createTheme({
         root: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+            textTransform:"lowercase"
+
         },
       },
     },
@@ -94,6 +107,8 @@ const theme = createTheme({
         root: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+            textTransform:"lowercase"
+
         },
       },
     },
@@ -102,6 +117,8 @@ const theme = createTheme({
         paper: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+            textTransform:"lowercase"
+
         },
       },
     },
@@ -109,8 +126,10 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 8,
-          textTransform: "none",
+
+          textTransform:"lowercase",
           fontWeight: 500,
+          
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
           padding: "10px 24px",
@@ -121,10 +140,14 @@ const theme = createTheme({
     MuiInputBase: {
       styleOverrides: {
         root: {
+          textTransform:"lowercase"
+,
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
         },
         input: {
+          textTransform:"lowercase"
+,
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
         },
@@ -133,10 +156,14 @@ const theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         root: {
+          textTransform:"lowercase"
+,
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
         },
         input: {
+          textTransform:"lowercase"
+,
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
         },
@@ -159,10 +186,14 @@ const theme = createTheme({
         root: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+          textTransform:"lowercase"
+,
         },
         input: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+          textTransform:"lowercase"
+,
         },
       },
     },
@@ -171,7 +202,9 @@ const theme = createTheme({
         root: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
-        },
+          textTransform:"lowercase"
+,
+            },
       },
     },
     MuiFormLabel: {
@@ -179,6 +212,8 @@ const theme = createTheme({
         root: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+          textTransform:"lowercase"
+,
         },
       },
     },
@@ -187,6 +222,8 @@ const theme = createTheme({
         root: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+          textTransform:"lowercase"
+,
         },
       },
     },
@@ -195,6 +232,8 @@ const theme = createTheme({
         select: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+          textTransform:"lowercase"
+,
         },
       },
     },
@@ -203,7 +242,9 @@ const theme = createTheme({
         root: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
-        },
+          textTransform:"lowercase"
+,
+              },
       },
     },
     MuiAutocomplete: {
@@ -212,11 +253,15 @@ const theme = createTheme({
           '& .MuiInputBase-input': {
             fontFamily:
               '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+          textTransform:"lowercase"
+,
           },
         },
         option: {
           fontFamily:
             '"Hanno Mid-Century Modern", "Roboto", "Helvetica", "Arial", sans-serif',
+          textTransform:"lowercase"
+,
         },
       },
     },
@@ -225,6 +270,8 @@ const theme = createTheme({
         root: {
           borderRadius: 12,
           boxShadow: "0 4px 20px rgba(26, 55, 65, 0.1)",
+          textTransform:"lowercase"
+,
         },
       },
     },

@@ -7,6 +7,8 @@ import MissionVisionSection from '../components/MissionVisionSection'
 import WhyJoinSection from '../components/WhyJoinSection'
 import Footer from '../components/Footer'
 import NewsletterSection from '../components/NewsletterSection'
+import AccommodationSection from '../components/AccommodationSection'
+import ScrollTopButton from '../components/ScrollTopButton'
 
 const LandingPage = () => {
   return (
@@ -16,8 +18,10 @@ const LandingPage = () => {
       <AboutSection />
       <MissionVisionSection />
       <WhyJoinSection />
+      <AccommodationSection />
       <NewsletterSection />
       <Footer />
+      <ScrollTopButton />
     </Box>
   )
 }

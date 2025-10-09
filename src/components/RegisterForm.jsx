@@ -545,26 +545,29 @@ const RegisterForm = () => {
             backgroundColor: "rgba(255,255,255,0.5)",
             backdropFilter: "blur(10px)",
             boxShadow: "0 20px 40px rgba(26, 55, 65, 0.1)",
+            '& .MuiInputBase-input': {
+              fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
+            },
+            '& input::placeholder': {
+              fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
+            },
+            '& .MuiSelect-select': {
+              fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
+            },
+            '& .MuiFormHelperText-root': {
+              fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
+            },
    
           }}
         >
           {/* Logo and Header */}
-          <Box sx={{ textAlign: "center", mb: 4 }}>
+          <Box sx={{ textAlign: "center", mb: 1 }}>
             <img
               src={nextFaceLogo}
               alt="Next Face Logo"
               style={{ height: 60, marginBottom: 16 }}
             />
          
-            <Typography
-              variant="h6"
-              sx={{
-                color: "#1a3741",
-                mb: 3,
-              }}
-            >
-              Register now and take part in reshaping the aesthetic experience in the heart of Egypt
-            </Typography>
           </Box>
 
           {/* Error Message */}
@@ -592,6 +595,7 @@ const RegisterForm = () => {
                       fullWidth
                       label="Full Name"
                       placeholder="Enter your full name"
+
                       error={!!errors.name}
                       helperText={errors.name?.message}
                       InputProps={{
@@ -613,6 +617,7 @@ const RegisterForm = () => {
                           fontSize: "0.75rem",
                         },
                         "& .MuiOutlinedInput-input::placeholder": {
+                          fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
                           color: "#366771", // for example, purple
                           opacity: 1, // ensure full visibility (default is 0.42)
                         },
@@ -655,6 +660,7 @@ const RegisterForm = () => {
                           fontSize: "0.75rem",
                         },
                         "& .MuiOutlinedInput-input::placeholder": {
+                          fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
                           color: "#366771", // for example, purple
                           opacity: 1, // ensure full visibility (default is 0.42)
                         },
@@ -694,13 +700,27 @@ const RegisterForm = () => {
                                   color: "#366771",
                                   opacity:"1",
                                   fontStyle: "normal",
+                                  fontFamily: 'Century Gothic, Arial, Helvetica, sans-serif',
                                 }}
                               >
                                 Nationality
                               </em>
                             );
                           }
-                          return selected;
+                          return (
+                            <span style={{ fontFamily: 'Century Gothic, Arial, Helvetica, sans-serif' }}>
+                              {selected}
+                            </span>
+                          );
+                        },
+                        MenuProps: {
+                          PaperProps: {
+                            sx: {
+                              '& .MuiMenuItem-root': {
+                                fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
+                              },
+                            },
+                          },
                         },
                       }}
                       sx={{
@@ -713,6 +733,9 @@ const RegisterForm = () => {
                         },
                         "& .MuiFormHelperText-root": {
                           fontSize: "0.75rem",
+                        },
+                        '& .MuiSelect-select': {
+                          fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
                         },
                       }}
                     >
@@ -781,9 +804,26 @@ const RegisterForm = () => {
                                           country
                                         ); // Debug log
                                         if (country) {
-                                          return `${country.flag} ${country.code}`;
+                                          return (
+                                            <span style={{ fontFamily: 'Century Gothic, Arial, Helvetica, sans-serif' }}>
+                                              {`${country.flag} ${country.code}`}
+                                            </span>
+                                          );
                                         }
-                                        return selected;
+                                        return (
+                                          <span style={{ fontFamily: 'Century Gothic, Arial, Helvetica, sans-serif' }}>
+                                            {selected}
+                                          </span>
+                                        );
+                                      },
+                                      MenuProps: {
+                                        PaperProps: {
+                                          sx: {
+                                            '& .MuiMenuItem-root': {
+                                              fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
+                                            },
+                                          },
+                                        },
                                       },
                                     }}
                                     sx={{
@@ -796,6 +836,9 @@ const RegisterForm = () => {
                                       },
                                       "& .MuiInput-root:after": {
                                         display: "none",
+                                      },
+                                      '& .MuiSelect-select': {
+                                        fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
                                       },
                                     }}
                                   >
@@ -854,6 +897,7 @@ const RegisterForm = () => {
                             fontSize: "0.75rem",
                           },
                           "& .MuiInputBase-input::placeholder": {
+                            fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
                             color: "#366771", // <-- your custom color
                             opacity: 1, // needed so it doesn’t fade
                           },
@@ -896,6 +940,7 @@ const RegisterForm = () => {
                           fontSize: "0.75rem",
                         },
                         "& .MuiInputBase-input::placeholder": {
+                          fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
                           color: "#366771", // <-- your custom color
                           opacity: 1, // needed so it doesn’t fade
                         },
@@ -937,6 +982,7 @@ const RegisterForm = () => {
                           fontSize: "0.75rem",
                         },
                         "& .MuiInputBase-input::placeholder": {
+                          fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
                           color: "#366771", // <-- your custom color
                           opacity: 1, // needed so it doesn’t fade
                         },

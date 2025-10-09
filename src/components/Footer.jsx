@@ -32,9 +32,9 @@ const Footer = () => {
                 }}
               />
             </Box>
-            <Typography variant="body2" sx={{ opacity: 0.8, lineHeight: 1.6 }}>
-              Shaping the future through innovation, collaboration, and
-              cutting-edge technology.
+            <Typography variant="body2" sx={{ opacity: 0.8, lineHeight: 1.6, textTransform:"lowercase" }}>
+            The Next Era. The Next Innovation.
+            The NextFace of Aesthetics.
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>

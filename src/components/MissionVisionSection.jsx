@@ -7,7 +7,7 @@ import {
   CardContent,
   Chip,
 } from "@mui/material";
-import missionimg from "../assets/Mission & Vision.jpg";
+import missionimg from "../assets/why.jpg";
 
 const MissionVisionSection = () => {
   return (
@@ -117,7 +117,7 @@ const MissionVisionSection = () => {
                   }}
                 >
              To elevate the standards of aesthetic medicine through education, innovation, and collaboration.
-NextFace unites global experts and passionate professionals to exchange knowledge, promote safety, and inspire the future of aesthetic excellence — all in a setting where science meets serenity by the Red Sea.
+NextFace unites global experts and passionate professionals to exchange knowledge, promote safety, and inspire the future of aesthetic excellence, all in a setting where science meets serenity by the Red Sea.
 
                 </Typography>
               </CardContent>
@@ -147,7 +147,7 @@ NextFace unites global experts and passionate professionals to exchange knowledg
                     textAlign: "left",
                   }}
                 >
-                  To make NextFace a global meeting point for aesthetic professionals — connecting experts and societies from around the world to share knowledge and promote safe, effective, and ethical practice.
+                  To make NextFace a global meeting point for aesthetic professionals, connecting experts and societies from around the world to share knowledge and promote safe, effective, and ethical practice.
 We aim to lead a new era in aesthetic medicine where innovation, education, and collaboration shape the future of beauty.
 
                 </Typography>

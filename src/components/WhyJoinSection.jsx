@@ -11,7 +11,7 @@ import CMEIcon from "../assets/nextface website icons-02.svg";
 import TrendSettersIcon from "../assets/nextface website icons-03.svg";
 import NetworkingIcon from "../assets/nextface website icons-04.svg";
 import EliteEveningsIcon from "../assets/5.svg";
-import whyJoinImg from "../assets/why join.jpg";
+import whyJoinImg from "../assets/why-join.jpg";
 
 const WhyJoinSection = () => {
   const reasons = [
@@ -115,13 +115,14 @@ const WhyJoinSection = () => {
           color: "text.primary",
           maxWidth: "1000px",
           mx: "auto", // center horizontally
-          mb: { xs: 4, md: 6 }, // space before cards
+          mb: { xs: 4}, // space before cards
           fontSize: { xs: "1rem", sm: "1.25rem" },
           lineHeight: 1.6,
+          fontFamily: 'Century Gothic, Arial, Helvetica, sans-serif',
+
         }}
       >
-       Because NextFace is more than a symposium — it’s the beginning of a new era in aesthetic medicine.
-
+       Because NextFace is more than a symposium, it’s the beginning of a new era in aesthetic medicine.
       </Typography>
             <Typography
         variant="h5"
@@ -132,6 +133,8 @@ const WhyJoinSection = () => {
           mb: { xs: 4, md: 6 }, // space before cards
           fontSize: { xs: "1rem", sm: "1.25rem" },
           lineHeight: 1.6,
+          fontFamily: 'Century Gothic, Arial, Helvetica, sans-serif',
+
         }}
       >
 Join global leaders, innovators, and professionals by the beautiful Red Sea in Soma Bay, Egypt, for an unforgettable experience where science, elegance, and connection meet.

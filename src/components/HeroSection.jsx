@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import heroImg from "../assets/hero.jpg";
-import hero2 from "../assets/2.jpg";
-import hero3 from "../assets/3.jpg";
 import hero4 from "../assets/4.jpg";
-import hero5 from "../assets/5.jpg";
-import hero1 from "../assets/About.jpg";
+import hero5 from "../assets/3.jpg";
+import hero1 from "../assets/bg-3.jpg";
+import hero2 from "../assets/bg-2.jpg";
+import hero3 from "../assets/bg-1.jpg";
 import {
   Typography,
   Container,
@@ -13,7 +12,7 @@ import {
   Box,
   Grid,
   Paper,
-  IconButton,
+IconButton,
 } from "@mui/material";
 import {
   CalendarToday as CalendarIcon,
@@ -30,7 +29,7 @@ const HeroSection = () => {
     seconds: 0,
   });
   const [bgIndex, setBgIndex] = useState(0);
-  const bgImages = [hero2, hero3, hero4, hero5, hero1];
+  const bgImages = [hero2, hero3, hero1, hero4, hero5];
   const navigate = useNavigate();
   // Countdown to December 3, 2025
   useEffect(() => {

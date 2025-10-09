@@ -45,8 +45,7 @@ const AboutSection = () => {
                   alt="Why Join Us"
                   sx={{
                     width: "100%",
-                    height: "600px",
-                    objectFit: "cover",
+                    height: { xs: 300, md: 600 },
                     borderRadius: 3,
                     transition: "transform 0.5s ease, filter 0.3s ease",
                     "&:hover": {

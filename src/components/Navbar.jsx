@@ -13,7 +13,9 @@ import {
   ListItemText,
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import nextFaceLogo from '../assets/next-face.png'
+import nextFaceLogo from '../assets/next-face-bo.png'
+import nextFaceLogoWhite from '../assets/next-face.png'
+
 
 const navItems = [
   { label: 'About Us', id: 'about' },
@@ -64,7 +66,7 @@ const Navbar = () => {
           {/* Logo */}
           <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
             <img
-              src={nextFaceLogo}
+              src={nextFaceLogoWhite}
               alt="Next Face Logo"
               style={{ height: 40, marginRight: 16 }}
             />
@@ -107,39 +109,58 @@ const Navbar = () => {
         anchor="left"
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
+        PaperProps={{
+          sx: {
+            width: 320,
+            bgcolor: '#ffffffcc',
+            backdropFilter: 'blur(10px)',
+          },
+        }}
       >
         <Box
           sx={{
-            width: 250,
-            bgcolor: '#f9f9f9',
             height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
           }}
-          role="presentation"
-          onClick={() => setDrawerOpen(false)}
-          onKeyDown={() => setDrawerOpen(false)}
         >
-          <List>
+          {/* Header with logo and close */}
+          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', p: 2, borderBottom: '1px solid #eee' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.5 }}>
+              <img src={nextFaceLogo} alt="Next Face Logo" style={{ height: 36 }} />
+            </Box>
+            <IconButton aria-label="Close menu" onClick={() => setDrawerOpen(false)}>
+              ✕
+            </IconButton>
+          </Box>
+
+          {/* Nav items */}
+          <List sx={{  flexGrow: 1 }}>
             {navItems.map((item) => (
               <ListItem
-                button
                 key={item.label}
                 onClick={() => scrollToSection(item.id)}
                 sx={{
                   cursor: 'pointer',
-                  '&:hover': {
-                    backgroundColor: '#eeeeee',
-                  },
+                  borderRadius: 2,
+                  mb: 1,
+                  px: 2,
+                  py: 1.25,
+                  '&:hover': { backgroundColor: '#f5f7f7' },
                 }}
               >
                 <ListItemText
                   primary={item.label}
                   primaryTypographyProps={{
-                    sx: { color: 'primary.main', fontWeight: 500 },
+                    sx: { color: 'primary.main', fontWeight: 600, fontSize: '1.05rem' },
                   }}
                 />
               </ListItem>
             ))}
           </List>
+
+          {/* CTA */}
+      
         </Box>
       </Drawer>
     </>

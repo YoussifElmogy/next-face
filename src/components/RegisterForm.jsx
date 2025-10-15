@@ -31,6 +31,7 @@ import {
   Business as BusinessIcon,
   Work as WorkIcon,
 } from "@mui/icons-material";
+import { FlightTakeoff as FlightTakeoffIcon, LocalAirport as LocalAirportIcon } from "@mui/icons-material";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -63,6 +64,14 @@ const schema = yup.object().shape({
     .string()
     .required("Phone number is required")
     .matches(/^[0-9]+$/, "Phone number must contain only numbers"),
+  airportName: yup
+    .string()
+    .oneOf(["CAIRO_AIRPORT", "HURGHADA_AIRPORT"], "Select a valid airport")
+    .required("Airport is required"),
+  flightDetails: yup
+    .string()
+    .max(300, "Flight details must not exceed 300 characters")
+    .optional(),
 });
 
 // Country codes list
@@ -486,6 +495,8 @@ const RegisterForm = () => {
       nationality: "",
       countryCode: "+20", // Default to Egypt
       phoneNumber: "",
+      airportName: "",
+      flightDetails: "",
     },
   });
 
@@ -502,6 +513,8 @@ const RegisterForm = () => {
         phoneNumber: `${data.countryCode}${data.phoneNumber}`,
         organizationName: data.organizationName,
         speciality: data.speciality,
+        airportName: data.airportName,
+        flightDetails: data.flightDetails,
       });
 
       console.log("Registration successful:", response.data);
@@ -985,6 +998,143 @@ const RegisterForm = () => {
                           fontFamily: '"Century Gothic", "Arial", "Helvetica", sans-serif',
                           color: "#366771", // <-- your custom color
                           opacity: 1, // needed so it doesn’t fade
+                        },
+                      }}
+                    />
+                  )}
+                />
+              </Grid>
+
+              {/* Airport Name */}
+              <Grid item size={{ xs: 12 }}>
+                <Controller
+                  name="airportName"
+                  control={control}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      fullWidth
+                      select
+                      label="Airport Name"
+                      displayEmpty
+                      error={!!errors.airportName}
+                      helperText={errors.airportName?.message}
+                      InputProps={{
+                        startAdornment: (
+                          <InputAdornment position="start">
+                            <LocalAirportIcon color="primary" />
+                          </InputAdornment>
+                        ),
+                      }}
+                      SelectProps={{
+                        displayEmpty: true,
+                        renderValue: (selected) => {
+                          if (!selected) {
+                            return (
+                              <em
+                                style={{
+                                  color: "#366771",
+                                  opacity: "1",
+                                  fontStyle: "normal",
+                                  fontFamily:
+                                    '"Century Gothic", "Arial", "Helvetica", sans-serif',
+                                }}
+                              >
+                                Airport Name
+                              </em>
+                            );
+                          }
+                          const map = {
+                            CAIRO_AIRPORT: "Cairo Airport",
+                            HURGHADA_AIRPORT: "Hurghada Airport",
+                          };
+                          return (
+                            <span
+                              style={{
+                                fontFamily:
+                                  'Century Gothic, Arial, Helvetica, sans-serif',
+                              }}
+                            >
+                              {map[selected] || selected}
+                            </span>
+                          );
+                        },
+                        MenuProps: {
+                          PaperProps: {
+                            sx: {
+                              '& .MuiMenuItem-root': {
+                                fontFamily:
+                                  '"Century Gothic", "Arial", "Helvetica", sans-serif',
+                              },
+                            },
+                          },
+                        },
+                      }}
+                      sx={{
+                        "& .MuiOutlinedInput-root": {
+                          borderRadius: 2,
+                          fontSize: "0.9rem",
+                        },
+                        "& .MuiInputLabel-root": {
+                          fontSize: "0.9rem",
+                        },
+                        "& .MuiFormHelperText-root": {
+                          fontSize: "0.75rem",
+                        },
+                        '& .MuiSelect-select': {
+                          fontFamily:
+                            '"Century Gothic", "Arial", "Helvetica", sans-serif',
+                        },
+                      }}
+                    >
+                      <MenuItem value="" disabled>
+                        <em>Airport Name</em>
+                      </MenuItem>
+                      <MenuItem value="CAIRO_AIRPORT">Cairo Airport</MenuItem>
+                      <MenuItem value="HURGHADA_AIRPORT">Hurghada Airport</MenuItem>
+                    </TextField>
+                  )}
+                />
+              </Grid>
+
+              {/* Flight Details */}
+              <Grid item size={{ xs: 12 }}>
+                <Controller
+                  name="flightDetails"
+                  control={control}
+                  render={({ field }) => (
+                    <TextField
+                      {...field}
+                      fullWidth
+                      label="Flight Details"
+                      placeholder="Enter your flight details"
+                      multiline
+                      minRows={3}
+                      InputProps={{
+                        startAdornment: (
+                          <InputAdornment position="start">
+                            <FlightTakeoffIcon color="primary" />
+                          </InputAdornment>
+                        ),
+                      }}
+                      error={!!errors.flightDetails}
+                      helperText={errors.flightDetails?.message}
+                      sx={{
+                        "& .MuiOutlinedInput-root": {
+                          borderRadius: 2,
+                          fontSize: "0.9rem",
+                          alignItems: "start",
+                        },
+                        "& .MuiInputLabel-root": {
+                          fontSize: "0.9rem",
+                        },
+                        "& .MuiFormHelperText-root": {
+                          fontSize: "0.75rem",
+                        },
+                        '& .MuiInputBase-input::placeholder': {
+                          fontFamily:
+                            '"Century Gothic", "Arial", "Helvetica", sans-serif',
+                          opacity: 1,
                         },
                       }}
                     />
